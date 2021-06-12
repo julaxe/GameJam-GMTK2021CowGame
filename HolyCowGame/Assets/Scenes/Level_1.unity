@@ -313,6 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301bf30ae7df9924ab3df7f83c6599a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 284262637}
   optionMenu: {fileID: 534018549}
 --- !u!1 &375830478
 GameObject:
@@ -904,7 +905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301bf30ae7df9924ab3df7f83c6599a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionMenu: {fileID: 0}
+  mainMenu: {fileID: 284262637}
+  optionMenu: {fileID: 534018549}
 --- !u!1001 &592762080
 PrefabInstance:
   m_ObjectHideFlags: 0
