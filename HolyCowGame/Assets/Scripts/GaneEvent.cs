@@ -9,6 +9,9 @@ public class GaneEvent : MonoBehaviour
     private Text leftCattle;
     private Text howManyNeed;
 
+    //Menu
+    public GameObject menu;
+
     // Cow - Demon
     public static int totalAmountOfDemon;
     public static int amountOfDemon;
@@ -19,17 +22,21 @@ public class GaneEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        leftCattle = transform.FindChild("leftCattle").GetComponent<Text>();
-        howManyNeed = transform.FindChild("howManyNeed").GetComponent<Text>();
+        /*leftCattle = transform.FindChild("leftCattle").GetComponent<Text>();
+        howManyNeed = transform.FindChild("howManyNeed").GetComponent<Text>();*/
         storedCattle = 0;
-        leftCattle.text = "aaa";
-        howManyNeed.text = "bbb";
+        /*leftCattle.text = "aaa";
+        howManyNeed.text = "bbb";*/
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            menu.SetActive(true);
+            Time.timeScale = 0f;
+        }
 
         if(leftHolyCattle + storedCattle < amountOfNeed)
         {

@@ -10,8 +10,7 @@ public class PlayerMovement : MonoBehaviour
         player2
     }
     [SerializeField] private float m_Speed;
-    [SerializeField] private PlayerNumber m_PlayerNumber;
-
+    [SerializeField] private PlayerNumber m_PlayerNumber;  
     private Rigidbody2D rb;
     private Vector2 m_currentForce;
     
@@ -45,8 +44,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 m_currentForce = Vector2.right * m_Speed;
-            }
-           
+            }           
         }
 
         //keys for player 2

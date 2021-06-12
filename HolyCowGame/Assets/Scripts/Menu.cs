@@ -31,4 +31,10 @@ public class Menu : MonoBehaviour
         gameObject.SetActive(false);
         optionMenu.SetActive(true);
     }
+
+    public void BackMainMenu()
+    {
+        gameObject.SetActive(true);
+        optionMenu.SetActive(false);
+    }
 }
