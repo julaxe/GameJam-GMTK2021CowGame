@@ -140,11 +140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3566537651017542876, guid: e68958cca9612be46aa9486cb4318c88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.579357
+      value: 9.41
       objectReference: {fileID: 0}
     - target: {fileID: 3566537651017542876, guid: e68958cca9612be46aa9486cb4318c88, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5056463
+      value: -2.22
       objectReference: {fileID: 0}
     - target: {fileID: 3566537651017542876, guid: e68958cca9612be46aa9486cb4318c88, type: 3}
       propertyPath: m_LocalPosition.z
@@ -180,6 +180,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e68958cca9612be46aa9486cb4318c88, type: 3}
+--- !u!1 &108937298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108937300}
+  - component: {fileID: 108937299}
+  m_Layer: 0
+  m_Name: Respawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &108937299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108937298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3978c69558b26e46babac55aa3665eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonCattle: {fileID: 3566537651017542872, guid: e68958cca9612be46aa9486cb4318c88, type: 3}
+  timer: 5
+--- !u!4 &108937300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108937298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.09, y: -3.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &138753184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6817311775808862370, guid: 0363affc00133c140bd572aa935acc5b, type: 3}

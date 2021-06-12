@@ -31,5 +31,6 @@ public class DemonCowDamage : MonoBehaviour
     public void killCow()
     {
         Destroy(this.gameObject);
+        --GaneEvent.amountOfDemon;
     }
 }

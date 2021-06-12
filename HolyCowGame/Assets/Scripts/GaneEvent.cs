@@ -22,6 +22,7 @@ public class GaneEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        totalAmountOfDemon = 5;
         amountOfNeed = 7;
         storedCattle = 0;
         howManyNeed.text = "Need :" + (amountOfNeed - storedCattle).ToString();

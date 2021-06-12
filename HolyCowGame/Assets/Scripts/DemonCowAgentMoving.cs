@@ -15,6 +15,7 @@ public class DemonCowAgentMoving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ++GaneEvent.amountOfDemon;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = agent.updateUpAxis = false;
         if (target == null)

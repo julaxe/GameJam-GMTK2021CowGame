@@ -25,8 +25,8 @@ public class Respawn : MonoBehaviour
             if(time >= timer)
             {
                 //Respawn 
-                //Instantiate(demonCattle, transform.position, Quaternion.identity);
-                time = 0f;
+                Instantiate(demonCattle, transform.position, Quaternion.identity);
+                time = 0f;                
             }
             time += Time.deltaTime;
             
