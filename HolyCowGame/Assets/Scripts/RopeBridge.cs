@@ -6,6 +6,8 @@ public class RopeBridge : MonoBehaviour
 {
     public Transform player1;
     public Transform player2;
+    public Material ropeMaterial;
+    public Material laserMaterial;
 
     private LineRenderer lineRenderer;
     private List<RopeSegment> ropeSegments = new List<RopeSegment>();
@@ -15,6 +17,7 @@ public class RopeBridge : MonoBehaviour
     private float friction = 0.1f;
 
     public EdgeCollider2D edgeCollider;
+    private bool laserOn = false;
 
     // Use this for initialization
     void Start()
@@ -35,11 +38,27 @@ public class RopeBridge : MonoBehaviour
     void Update()
     {
         this.DrawRope();
+
+        //laser - switch
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            laserOn = !laserOn;
+        }
     }
 
     private void FixedUpdate()
     {
+        //physics simulation
         this.Simulate();
+
+        if (laserOn)
+        {
+            lineRenderer.material = laserMaterial;
+        }
+        else
+        {
+            lineRenderer.material = ropeMaterial;
+        }
     }
 
     private void Simulate()
@@ -148,6 +167,48 @@ public class RopeBridge : MonoBehaviour
         {
             this.posNow = pos;
             this.posOld = pos;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (laserOn)
+        {
+            if(collision.gameObject.tag == "HolyCow")
+            {
+                //destroy the holy cow
+                Destroy(collision.gameObject);
+            }
+            if(collision.gameObject.tag == "DemonCow")
+            {
+                //destroy the demon cow
+                Destroy(collision.gameObject);
+            }
+        }
+        else //if the laser is off - it behaves like a normal rope
+        {
+            //We can implement another behavior here but for now, do nothing.
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (laserOn)
+        {
+            if (collision.gameObject.tag == "HolyCow")
+            {
+                //destroy the holy cow
+                Destroy(collision.gameObject);
+            }
+            if (collision.gameObject.tag == "DemonCow")
+            {
+                //destroy the demon cow
+                Destroy(collision.gameObject);
+            }
+        }
+        else //if the laser is off - it behaves like a normal rope
+        {
+            //We can implement another behavior here but for now, do nothing.
         }
     }
 }
