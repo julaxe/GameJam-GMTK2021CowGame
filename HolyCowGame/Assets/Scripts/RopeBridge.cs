@@ -12,6 +12,7 @@ public class RopeBridge : MonoBehaviour
     private float ropeSegLen = 0.25f;
     private int segmentLength = 35;
     private float lineWidth = 0.1f;
+    private float friction = 0.1f;
 
     public EdgeCollider2D edgeCollider;
 
@@ -44,7 +45,7 @@ public class RopeBridge : MonoBehaviour
     private void Simulate()
     {
         // SIMULATION
-        Vector2 forceGravity = new Vector2(0f, -1f);
+        Vector2 forceGravity = new Vector2(0f, 0f);
 
         List<Vector2> linePositions = new List<Vector2>();
 
@@ -52,6 +53,7 @@ public class RopeBridge : MonoBehaviour
         {
             RopeSegment firstSegment = this.ropeSegments[i];
             Vector2 velocity = firstSegment.posNow - firstSegment.posOld;
+            velocity *= (1 - friction);
             firstSegment.posOld = firstSegment.posNow;
             firstSegment.posNow += velocity;
             firstSegment.posNow += forceGravity * Time.fixedDeltaTime;

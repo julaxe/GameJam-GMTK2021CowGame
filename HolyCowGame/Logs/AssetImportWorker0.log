@@ -15,11 +15,11 @@ C:/Users/Julaxe/Documents/dev/GameJam-GMTK2021CowGame/HolyCowGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49966
+50795
 Successfully changed project path to: C:/Users/Julaxe/Documents/dev/GameJam-GMTK2021CowGame/HolyCowGame
 C:/Users/Julaxe/Documents/dev/GameJam-GMTK2021CowGame/HolyCowGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.13 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 31.15 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
 [Subsystems] Discovering subsystems at path C:/Users/Julaxe/Documents/dev/Unity/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,126 +35,292 @@ Initialize mono
 Mono path[0] = 'C:/Users/Julaxe/Documents/dev/Unity/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/Julaxe/Documents/dev/Unity/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/Julaxe/Documents/dev/Unity/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/Julaxe/Documents/dev/Unity/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001610 seconds.
+Registered in 0.001535 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 31.19 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.033 seconds
+- Completed reload, in  0.942 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000945 seconds.
+Registered in 0.000873 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.03 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 31.74 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.865 seconds
+- Completed reload, in  0.833 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 84.3 MB.
 System memory in use after: 84.3 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2237.
-Total: 2.312400 ms (FindLiveObjects: 0.407500 ms CreateObjectMapping: 0.058900 ms MarkObjects: 1.732700 ms  DeleteObjects: 0.112100 ms)
+Total: 2.412900 ms (FindLiveObjects: 0.369200 ms CreateObjectMapping: 0.058700 ms MarkObjects: 1.872900 ms  DeleteObjects: 0.110600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Player1.prefab
-  artifactKey: Guid(0a87644de2f57a14097844178817e3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player1.prefab using Guid(0a87644de2f57a14097844178817e3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f0ded4d7811da45f2e9ed0b6336a2e') in 0.087206 seconds
-  Import took 0.090364 seconds .
+  path: Assets/Scripts/Rope.cs
+  artifactKey: Guid(07613c4eac2534d62a1d826a65ce7dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rope.cs using Guid(07613c4eac2534d62a1d826a65ce7dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9575ee502437a949b316957044980f47') in 0.040621 seconds
+  Import took 0.043674 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Prefabs/Rope.prefab
-  artifactKey: Guid(947f893487bbf7945a8f8ab8c30da4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rope.prefab using Guid(947f893487bbf7945a8f8ab8c30da4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e079be645d55d3e820f75efa2970ef') in 0.010766 seconds
-  Import took 0.013520 seconds .
+  Time since last request: 0.000203 seconds.
+  path: Assets/Scripts/HolyCowHealthCount.cs
+  artifactKey: Guid(15cc642c6b7438146888bc1aa9df0f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/HolyCowHealthCount.cs using Guid(15cc642c6b7438146888bc1aa9df0f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edce9837b4b432c7280a7cafad1a0c0f') in 0.005526 seconds
+  Import took 0.008194 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Prefabs/Player2.prefab
-  artifactKey: Guid(0363affc00133c140bd572aa935acc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player2.prefab using Guid(0363affc00133c140bd572aa935acc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1901a4a186d97d7683e2a0fcdc9a0f0') in 0.009430 seconds
-  Import took 0.012557 seconds .
+  Time since last request: 1.140357 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4979f809fd175695e3c741b4b8f9ddbd') in 0.006231 seconds
+  Import took 0.009675 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Prefabs/Rope Bridge.prefab
-  artifactKey: Guid(3c4d8afe83d712749ba428ab7fa5354c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rope Bridge.prefab using Guid(3c4d8afe83d712749ba428ab7fa5354c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7a5581741c742d1fdff2b1976fab9f') in 0.004556 seconds
-  Import took 0.007567 seconds .
+  Time since last request: 75.751943 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebadc9c693c965ca0e75f5ae54e90244') in 0.002631 seconds
+  Import took 0.005866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.228699 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc3027896ada98ed230d06a44b872d8') in 0.002310 seconds
+  Import took 0.005472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.801866 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425fcf7627b98fa86d1b83ba4d4f1238') in 0.002330 seconds
+  Import took 0.005571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.935936 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab51f03e2d150f1648631fc55603d40') in 0.002311 seconds
+  Import took 0.005251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.575007 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9decd98d63bf5733e4c6688cf2d851') in 0.002337 seconds
+  Import took 0.005469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.399039 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de30d077637c9cf312606a8ee6dd5fc9') in 0.002303 seconds
+  Import took 0.005498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.316218 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873222a4288fd3374bd05f11ea20b2a7') in 0.002402 seconds
+  Import took 0.006091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.862051 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b360759c82a76f994bfa5c6161228d69') in 0.002473 seconds
+  Import took 0.005653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.166419 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ee4e513735d3a7cb2c21fb7e4477fb') in 0.002399 seconds
+  Import took 0.005291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.675201 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ae16cf0f735cb17f6cebe317c1cd00') in 0.002339 seconds
+  Import took 0.005309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.503722 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a132e84c70915e2c8c17435c8386d2e1') in 0.002406 seconds
+  Import took 0.005407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.390920 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477b27298fbd49742cb824c2e479926b') in 0.002399 seconds
+  Import took 0.005460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.166148 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ef88090e771ed12d8f8c8873b853ff') in 0.002368 seconds
+  Import took 0.005390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.999601 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(4d7ae7e4c1aa5f84488d6f8c9dec2411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810d299ab1c2ee5bd089cb964e2d9533') in 0.002548 seconds
+  Import took 0.005327 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000954 seconds.
+Registered in 0.000825 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.802 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.771 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.4 MB.
+System memory in use before: 84.4 MB.
+System memory in use after: 84.4 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2247.
-Total: 2.445700 ms (FindLiveObjects: 0.365300 ms CreateObjectMapping: 0.042000 ms MarkObjects: 1.933700 ms  DeleteObjects: 0.102900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 62.814219 seconds.
-  path: Assets/Prefabs/Rope Bridge.prefab
-  artifactKey: Guid(3c4d8afe83d712749ba428ab7fa5354c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rope Bridge.prefab using Guid(3c4d8afe83d712749ba428ab7fa5354c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6caa37156a8c66ff32fd11cc7c9052d') in 0.022808 seconds
-  Import took 0.026008 seconds .
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2240.
+Total: 2.376100 ms (FindLiveObjects: 0.331200 ms CreateObjectMapping: 0.040200 ms MarkObjects: 1.902200 ms  DeleteObjects: 0.101400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000862 seconds.
+Registered in 0.000888 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.763 seconds
+- Completed reload, in  0.810 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.6 MB.
-System memory in use after: 87.6 MB.
+System memory in use before: 84.6 MB.
+System memory in use after: 84.6 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2250.
-Total: 2.558800 ms (FindLiveObjects: 0.260500 ms CreateObjectMapping: 0.041700 ms MarkObjects: 2.149200 ms  DeleteObjects: 0.106100 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2243.
+Total: 2.275000 ms (FindLiveObjects: 0.329200 ms CreateObjectMapping: 0.040500 ms MarkObjects: 1.798900 ms  DeleteObjects: 0.105200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.826097 seconds.
+  path: Assets/Scripts/RopeBridge.cs
+  artifactKey: Guid(eee371d387dae4c09b6dd3d5d0e32f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/RopeBridge.cs using Guid(eee371d387dae4c09b6dd3d5d0e32f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfd310ea5173fd58cf85eb6fef8d1d7') in 0.010664 seconds
+  Import took 0.013573 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000876 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.7 MB.
+System memory in use after: 84.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2246.
+Total: 2.062400 ms (FindLiveObjects: 0.222100 ms CreateObjectMapping: 0.043700 ms MarkObjects: 1.688500 ms  DeleteObjects: 0.107100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 266.753491 seconds.
+  path: Assets/Scripts/RopeBridge.cs
+  artifactKey: Guid(eee371d387dae4c09b6dd3d5d0e32f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/RopeBridge.cs using Guid(eee371d387dae4c09b6dd3d5d0e32f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f491bf488b5522f6d77297e84bfa5c1') in 0.005826 seconds
+  Import took 0.008911 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001345 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.744 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1789 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.8 MB.
+System memory in use after: 84.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2249.
+Total: 2.138400 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.046600 ms MarkObjects: 1.713800 ms  DeleteObjects: 0.136000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.668129 seconds.
+  path: Assets/Scripts/RopeBridge.cs
+  artifactKey: Guid(eee371d387dae4c09b6dd3d5d0e32f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/RopeBridge.cs using Guid(eee371d387dae4c09b6dd3d5d0e32f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdaa2a7ca6d5871adb43c00586f92b3d') in 0.005045 seconds
+  Import took 0.008161 seconds .
 

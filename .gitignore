@@ -37,3 +37,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+HolyCowGame/Logs/AssetImportWorker0.log
+HolyCowGame/Logs/AssetImportWorker0-prev.log
