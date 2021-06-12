@@ -145,6 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 0}
   player2: {fileID: 0}
+  ropeMaterial: {fileID: 2100000, guid: 9087759e9b12c4b5f89d38da84ae424a, type: 2}
+  laserMaterial: {fileID: 2100000, guid: 2cb32dd76b954c14b8a102eaed9e39af, type: 2}
   edgeCollider: {fileID: 0}
 --- !u!68 &-1970007485423972074
 EdgeCollider2D:
