@@ -7,44 +7,66 @@ public class DemonCowAgentMoving : MonoBehaviour
     private GameObject[] holyCows;
     [SerializeField] Transform target;
     private NavMeshAgent agent;
-    private bool isSeeking;
+    [SerializeField] private float coolAfterAttack = 2.0f;
+    private float nextAttack = 0.0f;
+    public enum demonCowStates { afterAttack, seeking};
+    private demonCowStates demonCowCurrentState;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = agent.updateUpAxis = false;
-        isSeeking = true;
         if (target == null)
         {
             holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
             target = holyCows[0].GetComponent<Transform>();
-            //find the closest holycow 
-            for (int i = 0; i < holyCows.Length; i++)
-            {
-                holyCows[i].GetComponent<Transform>();
-                if(Vector2.Distance(holyCows[i].GetComponent<Transform>().position, transform.position) < 
-                    Vector2.Distance(target.position, transform.position))
-                {
-                    target = holyCows[i].GetComponent<Transform>();
-                }
-            }
+            demonCowNextTarget();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (isSeeking == true)
+        Debug.Log(demonCowCurrentState);
+        switch(demonCowCurrentState)
         {
-            agent.SetDestination(target.position);
+            case demonCowStates.afterAttack:
+                if(Time.time > nextAttack)
+                {
+                    demonCowChangingState(demonCowStates.seeking);
+                }
+                break;
+            
+            case demonCowStates.seeking:
+                agent.SetDestination(target.position);
+                break;
+            default:
+            break;
+        }
+       
+    }
+    public void demonCowChangingState(demonCowStates a)
+    {
+        demonCowCurrentState = a;
+        if(demonCowCurrentState == demonCowStates.afterAttack)
+        {
+            nextAttack = Time.time + coolAfterAttack;
         }
     }
 
-    public void demonCowIsSeeking(bool a)
+    private void demonCowNextTarget()
     {
-        isSeeking = a;
+        //find the closest holycow 
+        for (int i = 0; i < holyCows.Length; i++)
+        {
+            holyCows[i].GetComponent<Transform>();
+            if(Vector2.Distance(holyCows[i].GetComponent<Transform>().position, transform.position) < 
+                Vector2.Distance(target.position, transform.position))
+            {
+                target = holyCows[i].GetComponent<Transform>();
+            }
+        }
     }
 
 }

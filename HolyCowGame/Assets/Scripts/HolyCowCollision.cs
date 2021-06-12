@@ -27,8 +27,7 @@ public class HolyCowCollision : MonoBehaviour
             Vector2 temp = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
             temp = temp.normalized;
             body.AddForce(temp * forceAmount, ForceMode2D.Impulse);
-
-
+            collision.gameObject.GetComponent<DemonCowAgentMoving>().demonCowChangingState(0);
         }
         if(collision.gameObject.tag == "SafeZone")
         {
