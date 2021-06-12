@@ -8,7 +8,7 @@ public class Respawn : MonoBehaviour
 
     private float time;
     [SerializeField]
-    private float timer;
+    private float timer = 5f;
     
     // Start is called before the first frame update
     void Start()
