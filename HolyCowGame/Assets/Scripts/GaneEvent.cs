@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class GaneEvent : MonoBehaviour
 {
     // Text
-    private Text leftCattle;
-    private Text howManyNeed;
+    
+    public Text howManyNeed;
 
     //Menu
     public GameObject menu;
@@ -22,16 +22,19 @@ public class GaneEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*leftCattle = transform.FindChild("leftCattle").GetComponent<Text>();
-        howManyNeed = transform.FindChild("howManyNeed").GetComponent<Text>();*/
+        amountOfNeed = 7;
         storedCattle = 0;
-        /*leftCattle.text = "aaa";
-        howManyNeed.text = "bbb";*/
+        howManyNeed.text = "Need :" + (amountOfNeed - storedCattle).ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if((amountOfNeed - storedCattle) <= 0)
+        {
+            //Win State
+        }
+
         if(Input.GetKeyUp(KeyCode.Escape))
         {
             menu.SetActive(true);
