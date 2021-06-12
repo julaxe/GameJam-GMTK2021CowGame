@@ -22,7 +22,7 @@ public class idleMovementHolyCow : MonoBehaviour
     {
         if(body.velocity == Vector2.zero && Time.time > nextMovement)
         {
-            Vector2 temp = new Vector2(Random.Range(0.0f, 100.0f), Random.Range(0.0f, 100.0f));
+            Vector2 temp = new Vector2(Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f));
             temp = temp.normalized;
             nextMovement = Time.time + Random.Range(minTime, maxTime);
             body.AddForce( temp * amountForce, ForceMode2D.Impulse);
