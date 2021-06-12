@@ -39,6 +39,10 @@ public class DemonCowAgentMoving : MonoBehaviour
                 break;
             
             case demonCowStates.seeking:
+                if(target.tag != "HolyCow")
+                {
+                    demonCowNextTarget();
+                }
                 agent.SetDestination(target.position);
                 break;
             default:
