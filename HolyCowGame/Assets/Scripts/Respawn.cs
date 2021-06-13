@@ -26,6 +26,7 @@ public class Respawn : MonoBehaviour
             {
                 //Respawn 
                 Instantiate(demonCattle, transform.position, Quaternion.identity);
+                SoundManagerScript.PlaySound("demonCowSpawn");
                 time = 0f;                
             }
             time += Time.deltaTime;

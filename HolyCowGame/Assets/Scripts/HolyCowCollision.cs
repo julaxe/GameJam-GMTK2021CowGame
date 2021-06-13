@@ -26,6 +26,7 @@ public class HolyCowCollision : MonoBehaviour
     {
         if(collision.gameObject.tag == "DemonCow")
         {
+            SoundManagerScript.PlaySound("holyCowHit");
             this.GetComponent<HolyCowHealthCount>().TakeDamage(20);
             ContactPoint2D contact = collision.contacts[0];
             /*Vector2 temp = collision.gameObject.GetComponent<Rigidbody2D>().velocity;

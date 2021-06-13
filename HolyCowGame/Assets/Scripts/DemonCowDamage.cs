@@ -22,7 +22,7 @@ public class DemonCowDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Rope")
         {
-
+         
             killCow();
         }
 
@@ -30,6 +30,7 @@ public class DemonCowDamage : MonoBehaviour
 
     public void killCow()
     {
+        SoundManagerScript.PlaySound("demonCowDeath");
         Destroy(this.gameObject);
         --GaneEvent.amountOfDemon;
     }

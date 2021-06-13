@@ -178,11 +178,17 @@ public class RopeBridge : MonoBehaviour
             {
                 //destroy the holy cow
                 Destroy(collision.gameObject);
+                SoundManagerScript.PlaySound("holyCowDeath");
+                SoundManagerScript.PlaySound("ropeHit");
+
             }
-            if(collision.gameObject.tag == "DemonCow")
+            if (collision.gameObject.tag == "DemonCow")
             {
                 //destroy the demon cow
                 Destroy(collision.gameObject);
+                SoundManagerScript.PlaySound("demonCowDeath");
+                SoundManagerScript.PlaySound("ropeHit");
+
             }
         }
         else //if the laser is off - it behaves like a normal rope
@@ -199,11 +205,16 @@ public class RopeBridge : MonoBehaviour
             {
                 //destroy the holy cow
                 Destroy(collision.gameObject);
+                SoundManagerScript.PlaySound("holyCowDeath");
+                SoundManagerScript.PlaySound("ropeHit");
             }
             if (collision.gameObject.tag == "DemonCow")
             {
                 //destroy the demon cow
                 Destroy(collision.gameObject);
+                SoundManagerScript.PlaySound("demonCowDeath");
+                SoundManagerScript.PlaySound("ropeHit");
+
             }
         }
         else //if the laser is off - it behaves like a normal rope
