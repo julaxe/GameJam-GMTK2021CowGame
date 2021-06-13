@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: e30dfde52b0c894498a57675940e4ce1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -256134641328294824
+    second: Farmer_Idle_0
+  - first:
+      213: 7846963651348721729
+    second: Farmer_Idle_1
+  - first:
+      213: -1784776090499497308
+    second: Farmer_Idle_1
+  - first:
+      213: 1965758470296646689
+    second: Farmer_Idle_3
+  - first:
+      213: -8201361674091190976
+    second: Farmer_Idle_2
+  - first:
+      213: -3413653483990484365
+    second: Farmer_Idle_5
+  - first:
+      213: 2252626771459613582
+    second: Farmer_Idle_3
+  - first:
+      213: 8634356965393102914
+    second: Farmer_Idle_7
+  - first:
+      213: -440325869746829010
+    second: Farmer_Idle_4
+  - first:
+      213: 3849345774972508725
+    second: Farmer_Idle_9
+  - first:
+      213: -9126978898848574126
+    second: Farmer_Idle_10
+  - first:
+      213: -4517873825481987847
+    second: Farmer_Idle_11
+  - first:
+      213: 5123345379816576542
+    second: Farmer_Idle_12
+  - first:
+      213: -2583543587279010101
+    second: Farmer_Idle_13
+  - first:
+      213: -3366469287511151432
+    second: Farmer_Idle_14
+  - first:
+      213: -5958455895112632529
+    second: Farmer_Idle_15
+  - first:
+      213: 3007956630056236502
+    second: Farmer_Idle_16
+  - first:
+      213: 5333842288296747269
+    second: Farmer_Idle_17
+  - first:
+      213: -7590646134976460928
+    second: Farmer_Idle_18
+  - first:
+      213: -8445506654733555323
+    second: Farmer_Idle_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Farmer_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 150
+        width: 377
+        height: 585
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85474f896e6027cf0800000000000000
+      internalID: -256134641328294824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 148
+        width: 379
+        height: 590
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2ca221a933b37e0800000000000000
+      internalID: -1784776090499497308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 159
+        width: 378
+        height: 595
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045aa459209ee2e80800000000000000
+      internalID: -8201361674091190976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 148
+        width: 378
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83a26c1d10f24f10800000000000000
+      internalID: 2252626771459613582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Farmer_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 148
+        width: 362
+        height: 605
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29435454f5a3e9f0800000000000000
+      internalID: -440325869746829010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
