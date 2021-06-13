@@ -15,15 +15,21 @@ public class GaneEvent : MonoBehaviour
     // Cow - Demon
     public static int totalAmountOfDemon;
     public static int amountOfDemon;
+    [SerializeField]
+    private int demonCattleAmount;
     // Cow - Holy
     public static int leftHolyCattle;
     public static int amountOfNeed;
     public static int storedCattle;
+    [SerializeField]
+    private int cattleNeedAmount;
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        totalAmountOfDemon = 5;
-        amountOfNeed = 7;
+        amountOfNeed = cattleNeedAmount;
+        totalAmountOfDemon = demonCattleAmount;        
         storedCattle = 0;
         howManyNeed.text = "Need :" + (amountOfNeed - storedCattle).ToString();
     }
