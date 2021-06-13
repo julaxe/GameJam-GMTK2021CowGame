@@ -24,11 +24,11 @@ GameObject:
   - component: {fileID: 3668570300707007302}
   - component: {fileID: 3668570300707007301}
   - component: {fileID: 3668570300707007303}
-  - component: {fileID: 3668570300707007297}
   - component: {fileID: 3668570300707007296}
   - component: {fileID: 3668570300707007298}
   - component: {fileID: 7277754275247538869}
   - component: {fileID: 6105643301364248093}
+  - component: {fileID: 62703692377518015}
   m_Layer: 7
   m_Name: HolyCow
   m_TagString: HolyCow
@@ -115,32 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
---- !u!61 &3668570300707007297
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668570300707007300}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.057744205, y: -0.07223272}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.428, y: 2.128}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9659888, y: 1.0660852}
-  m_EdgeRadius: 0
 --- !u!114 &3668570300707007296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +184,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &62703692377518015
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668570300707007300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.026923805, y: -0.21563211}
+  m_Size: {x: 1.8835495, y: 0.58848673}
+  m_Direction: 1
 --- !u!1001 &3668570299881471001
 PrefabInstance:
   m_ObjectHideFlags: 0
