@@ -7,6 +7,8 @@ public class HolyCowCollision : MonoBehaviour
     private Rigidbody2D body;
     private Animator animator;
     [SerializeField] float forceAmount = 5;
+
+    private float nextAttackTime = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class HolyCowCollision : MonoBehaviour
     {
         if(collision.gameObject.tag == "DemonCow")
         {
+            nextAttackTime = Time.time + 2.0f; //next attack is in 2 seconds.
             SoundManagerScript.PlaySound("holyCowHit");
             this.GetComponent<HolyCowHealthCount>().TakeDamage(20);
             ContactPoint2D contact = collision.contacts[0];
@@ -57,6 +60,16 @@ public class HolyCowCollision : MonoBehaviour
             }
 
             body.AddForce((temp * forceAmount), ForceMode2D.Impulse);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "DemonCow" && Time.time > nextAttackTime)
+        {
+            nextAttackTime = Time.time + 2.0f; //next attack is in 2 seconds.
+            SoundManagerScript.PlaySound("holyCowHit");
+            this.GetComponent<HolyCowHealthCount>().TakeDamage(20);
         }
     }
 
