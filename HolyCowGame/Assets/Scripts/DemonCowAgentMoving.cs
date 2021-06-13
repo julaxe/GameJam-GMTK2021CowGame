@@ -51,17 +51,32 @@ public class DemonCowAgentMoving : MonoBehaviour
                 case demonCowStates.afterAttack:
                     if (Time.time > nextAttack)
                     {
-
                         demonCowChangingState(demonCowStates.seeking);
                     }
                     break;
 
                 case demonCowStates.seeking:
-                    if (target.tag != "HolyCow")
+                    if(target == null)
                     {
-                        demonCowNextTarget();
+                        holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
+                        if (holyCows.Length <= 0)
+                        {
+                            target = holyCows[0].GetComponent<Transform>();
+                            demonCowNextTarget();
+                        }
+                    }                    
+                    else if (target.tag != "HolyCow")
+                    {
+                        holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
+                        if (holyCows.Length <= 0)
+                        {
+                            target = holyCows[0].GetComponent<Transform>();
+                            demonCowNextTarget();
+                        }
                     }
+                    if(target != null)
                     agent.SetDestination(target.position);
+
                     break;
                 default:
                     break;

@@ -18,7 +18,7 @@ public class HolyCowCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("Speed", body.velocity.magnitude);
+        animator.SetFloat("Speed", body.velocity.magnitude);        
         
     }
 
