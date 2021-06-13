@@ -31,12 +31,23 @@ public class DemonCowAgentMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (target == null)
+        {            
+            holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
+            if(holyCows.Length <= 0)
+            {
+                target = holyCows[0].GetComponent<Transform>();
+                demonCowNextTarget();
+            }
+           
+        }
         Debug.Log(demonCowCurrentState);
         switch(demonCowCurrentState)
         {
             case demonCowStates.afterAttack:
                 if(Time.time > nextAttack)
                 {
+                    
                     demonCowChangingState(demonCowStates.seeking);
                 }
                 break;

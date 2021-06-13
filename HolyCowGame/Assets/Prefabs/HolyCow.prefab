@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 3668570300707007296}
   - component: {fileID: 3668570300707007298}
   - component: {fileID: 7277754275247538869}
+  - component: {fileID: 6105643301364248093}
   m_Layer: 7
   m_Name: HolyCow
   m_TagString: HolyCow
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
+  m_Sprite: {fileID: 3384666915762051925, guid: fe00c46df25575148a8265ec6d82074e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,18 +128,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.008069754, y: -0.16796201}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.428, y: 2.128}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.4207034, y: 1.7481571}
   m_EdgeRadius: 0
 --- !u!114 &3668570300707007296
 MonoBehaviour:
@@ -188,6 +189,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextMovement: 0
   amountForce: 1
+  minTime: 1
+  maxTime: 6
+--- !u!95 &6105643301364248093
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668570300707007300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13690ce519de4354db9e279ddf465c93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3668570299881471001
 PrefabInstance:
   m_ObjectHideFlags: 0

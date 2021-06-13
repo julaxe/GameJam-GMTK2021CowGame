@@ -22,7 +22,11 @@ public class HolyCowHealthCount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(m_CurrentHealth <= 0)
+        {
+            --GaneEvent.leftHolyCattle;
+            Destroy(gameObject);
+        }
     }
 
     public void TakeDamage(int damage)
