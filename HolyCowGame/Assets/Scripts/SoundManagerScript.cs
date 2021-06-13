@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManagerScript : MonoBehaviour
 {
     public static AudioClip demonCowSpawn, demonCowDeath, holyCowCollected, holyCowHit, ropeHit,
-        holyCowDeath;
+        holyCowDeath, changeRope;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class SoundManagerScript : MonoBehaviour
         holyCowHit = Resources.Load<AudioClip>("holyCowHit");
         holyCowDeath = Resources.Load<AudioClip>("holyCowDeath");
         ropeHit = Resources.Load<AudioClip>("ropeHit");
-
+        changeRope = Resources.Load<AudioClip>("changeRope");
         audioSrc = GetComponent<AudioSource>();
     }
 
@@ -47,6 +47,9 @@ public class SoundManagerScript : MonoBehaviour
                 break;
             case "holyCowDeath":
                 audioSrc.PlayOneShot(holyCowDeath);
+                break;
+            case "changeRope":
+                audioSrc.PlayOneShot(changeRope);
                 break;
             default:
                 break;

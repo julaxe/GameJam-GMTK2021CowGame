@@ -42,7 +42,12 @@ public class RopeBridge : MonoBehaviour
         //laser - switch
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            
             laserOn = !laserOn;
+            if (laserOn)
+            {
+                SoundManagerScript.PlaySound("changeRope");
+            }
         }
     }
 
