@@ -13,7 +13,8 @@ public class SafeZone : MonoBehaviour
             Debug.Log("HolyCow in the Safe Zone!!!!");
             SoundManagerScript.PlaySound("holyCowCollected");
             collision.gameObject.GetComponent<idleMovementHolyCow>().enabled = false;
-            collision.gameObject.layer = 0;            
+            collision.gameObject.layer = 0;
+            collision.gameObject.tag = "Untagged";
         }
     }
     
