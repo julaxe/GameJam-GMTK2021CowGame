@@ -51,6 +51,7 @@ public class DemonCowAgentMoving : MonoBehaviour
                 case demonCowStates.afterAttack:
                     if (Time.time > nextAttack)
                     {
+
                         demonCowChangingState(demonCowStates.seeking);
                     }
                     break;
@@ -58,24 +59,14 @@ public class DemonCowAgentMoving : MonoBehaviour
                 case demonCowStates.seeking:
                     if(target == null)
                     {
-                        holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
-                        if (holyCows.Length <= 0)
-                        {
-                            target = holyCows[0].GetComponent<Transform>();
-                            demonCowNextTarget();
-                        }
+                        demonCowNextTarget();
                     }                    
                     else if (target.tag != "HolyCow")
                     {
-                        holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
-                        if (holyCows.Length <= 0)
-                        {
-                            target = holyCows[0].GetComponent<Transform>();
-                            demonCowNextTarget();
-                        }
+                        demonCowNextTarget();
                     }
                     if(target != null)
-                    agent.SetDestination(target.position);
+                        agent.SetDestination(target.position);
 
                     break;
                 default:
@@ -115,15 +106,19 @@ public class DemonCowAgentMoving : MonoBehaviour
 
     private void demonCowNextTarget()
     {
+        holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
+        target = holyCows[0].GetComponent<Transform>();
         //find the closest holycow 
         for (int i = 0; i < holyCows.Length; i++)
         {
-            holyCows[i].GetComponent<Transform>();
-            if(Vector2.Distance(holyCows[i].GetComponent<Transform>().position, transform.position) < 
-                Vector2.Distance(target.position, transform.position))
-            {
-                target = holyCows[i].GetComponent<Transform>();
-            }
+            
+                holyCows[i].GetComponent<Transform>();
+                if (Vector2.Distance(holyCows[i].GetComponent<Transform>().position, transform.position) <
+                    Vector2.Distance(target.position, transform.position))
+                {
+                    target = holyCows[i].GetComponent<Transform>();
+                }
+            
         }
     }
 
