@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class DemonCowAgentMoving : MonoBehaviour
 {
+    private Animator animator;
     private GameObject[] holyCows;
     [SerializeField] Transform target;
     private NavMeshAgent agent;
@@ -17,6 +18,7 @@ public class DemonCowAgentMoving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = transform.GetComponent<Animator>();
         ++GaneEvent.amountOfDemon;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = agent.updateUpAxis = false;
@@ -125,6 +127,16 @@ public class DemonCowAgentMoving : MonoBehaviour
                 target = holyCows[i].GetComponent<Transform>();
             }
         }
+    }
+    public void killCow()
+    {
+        animator.SetTrigger("Death");
+        --GaneEvent.amountOfDemon;        
+    }
+
+    private void Dead()
+    {
+        Destroy(gameObject);
     }
 
 }

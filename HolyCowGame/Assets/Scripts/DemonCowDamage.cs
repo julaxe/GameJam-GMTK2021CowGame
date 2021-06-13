@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class DemonCowDamage : MonoBehaviour
 {
-
+    Animator animator;
+    private bool isDead;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        isDead = false;
+        animator = transform.GetComponent<Animator>();
+        animator.SetTrigger("Spawn");
     }
 
     // Update is called once per frame
@@ -18,19 +21,21 @@ public class DemonCowDamage : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+  /*  private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Rope")
         {
 
-            killCow();
+            //killCow();
         }
 
     }
 
     public void killCow()
-    {
-        Destroy(this.gameObject);
+    {        
+        animator.SetTrigger("Death");
         --GaneEvent.amountOfDemon;
-    }
+        isDead = true;        
+    }*/
+    
 }

@@ -177,12 +177,12 @@ public class RopeBridge : MonoBehaviour
             if(collision.gameObject.tag == "HolyCow")
             {
                 //destroy the holy cow
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<HolyCowHealthCount>().DeadByLasor();
             }
             if(collision.gameObject.tag == "DemonCow")
             {
-                //destroy the demon cow
-                Destroy(collision.gameObject);
+                collision.gameObject.GetComponent<DemonCowAgentMoving>().killCow();                
+                
             }
         }
         else //if the laser is off - it behaves like a normal rope
@@ -198,12 +198,12 @@ public class RopeBridge : MonoBehaviour
             if (collision.gameObject.tag == "HolyCow")
             {
                 //destroy the holy cow
-                Destroy(collision.gameObject);
+                
             }
             if (collision.gameObject.tag == "DemonCow")
             {
                 //destroy the demon cow
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
             }
         }
         else //if the laser is off - it behaves like a normal rope

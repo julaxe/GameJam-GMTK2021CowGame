@@ -18,6 +18,7 @@ public class HolyCowHealthCount : MonoBehaviour
         healthbar.slider = transform.Find("CanvasHealth").Find("HealthBar").GetComponent<HealthBarScript>().GetComponent<Slider>();
         m_CurrentHealth = m_MaxHealth;
         healthbar.SetMaxHealth(m_MaxHealth);
+        
     }
 
     // Update is called once per frame
@@ -29,6 +30,11 @@ public class HolyCowHealthCount : MonoBehaviour
             --GaneEvent.leftHolyCattle;
             isDead = true;
         }
+    }
+    public void DeadByLasor()
+    {
+        animator.SetTrigger("Dead");
+        --GaneEvent.leftHolyCattle;        
     }
 
     public void TakeDamage(int damage)
