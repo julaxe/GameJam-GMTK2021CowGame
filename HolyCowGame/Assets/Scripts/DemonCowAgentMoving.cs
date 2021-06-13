@@ -21,7 +21,7 @@ public class DemonCowAgentMoving : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = agent.updateUpAxis = false;
         if (target == null)
-        {
+        {            
             holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
             target = holyCows[0].GetComponent<Transform>();
             demonCowNextTarget();
@@ -31,56 +31,61 @@ public class DemonCowAgentMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null)
-        {            
-            holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
-            if(holyCows.Length <= 0)
-            {
-                target = holyCows[0].GetComponent<Transform>();
-                demonCowNextTarget();
-            }
-           
-        }
-        Debug.Log(demonCowCurrentState);
-        switch(demonCowCurrentState)
+
+        if (GaneEvent.leftHolyCattle > 0)
         {
-            case demonCowStates.afterAttack:
-                if(Time.time > nextAttack)
+            if (target == null)
+            {
+                holyCows = GameObject.FindGameObjectsWithTag("HolyCow");
+                if (holyCows.Length <= 0)
                 {
-                    
-                    demonCowChangingState(demonCowStates.seeking);
-                }
-                break;
-            
-            case demonCowStates.seeking:
-                if(target.tag != "HolyCow")
-                {
+                    target = holyCows[0].GetComponent<Transform>();
                     demonCowNextTarget();
                 }
-                agent.SetDestination(target.position);
-                break;
-            default:
-            break;
-        }
 
-        //check where to face
-        if (agent.velocity.x > 0)
-        {
-            m_facingRight = true;
-        }
-        else if (agent.velocity.x < 0)
-        {
-            m_facingRight = false;
-        }
 
-        //flip if necesary
-        if (m_facingRight)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-        else
-        {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+            
+            switch (demonCowCurrentState)
+            {
+                case demonCowStates.afterAttack:
+                    if (Time.time > nextAttack)
+                    {
+
+                        demonCowChangingState(demonCowStates.seeking);
+                    }
+                    break;
+
+                case demonCowStates.seeking:
+                    if (target.tag != "HolyCow")
+                    {
+                        demonCowNextTarget();
+                    }
+                    agent.SetDestination(target.position);
+                    break;
+                default:
+                    break;
+            }
+
+            //check where to face
+            if (agent.velocity.x > 0)
+            {
+                m_facingRight = true;
+            }
+            else if (agent.velocity.x < 0)
+            {
+                m_facingRight = false;
+            }
+
+            //flip if necesary
+            if (m_facingRight)
+            {
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+            else
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
         }
 
     }
