@@ -11,11 +11,18 @@ public class PlayerMovement : MonoBehaviour
     }
     [SerializeField] private float m_Speed;
     [SerializeField] private PlayerNumber m_PlayerNumber;  
+
     private Rigidbody2D rb;
     private Vector2 m_currentForce;
+
+    //animation
+    private Animator animator;
+    private bool m_moving;
+    private bool m_facingRight;
     
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -36,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 m_currentForce = Vector2.left * m_Speed;
+                m_facingRight = false;
             }
             if (Input.GetKey(KeyCode.S))
             {
@@ -44,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 m_currentForce = Vector2.right * m_Speed;
+                m_facingRight = true;
             }           
         }
 
@@ -57,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 m_currentForce = Vector2.left * m_Speed;
+                m_facingRight = false;
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -65,13 +75,30 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 m_currentForce = Vector2.right * m_Speed;
+                m_facingRight = true;
             }
-
         }
+
         //this apply for both cases
         if (!Input.anyKey)
         {
             m_currentForce = Vector2.zero;
+            m_moving = false;
+        }else
+        {
+            m_moving = true;
         }
+
+        //Fliping the X axis depending on the key input
+        if(m_facingRight)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+
+        animator.SetBool("isMoving", m_moving);
     }
 }

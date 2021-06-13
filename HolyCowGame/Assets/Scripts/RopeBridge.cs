@@ -16,7 +16,7 @@ public class RopeBridge : MonoBehaviour
     private float lineWidth = 0.1f;
     private float friction = 0.1f;
 
-    public EdgeCollider2D edgeCollider;
+    private EdgeCollider2D edgeCollider;
     private bool laserOn = false;
 
     // Use this for initialization
