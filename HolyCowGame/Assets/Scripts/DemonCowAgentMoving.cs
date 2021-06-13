@@ -12,6 +12,8 @@ public class DemonCowAgentMoving : MonoBehaviour
     public enum demonCowStates { afterAttack, seeking};
     private demonCowStates demonCowCurrentState;
 
+    private bool m_facingRight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +51,27 @@ public class DemonCowAgentMoving : MonoBehaviour
             default:
             break;
         }
-       
+
+        //check where to face
+        if (agent.velocity.x > 0)
+        {
+            m_facingRight = true;
+        }
+        else if (agent.velocity.x < 0)
+        {
+            m_facingRight = false;
+        }
+
+        //flip if necesary
+        if (m_facingRight)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+
     }
     public void demonCowChangingState(demonCowStates a)
     {
