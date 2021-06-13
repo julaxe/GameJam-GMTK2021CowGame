@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GaneEvent : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GaneEvent : MonoBehaviour
 
     //Menu
     public GameObject menu;
+    [SerializeField]
+    private int level;
 
     // Cow - Demon
     public static int totalAmountOfDemon;
@@ -39,7 +42,7 @@ public class GaneEvent : MonoBehaviour
     {
         if((amountOfNeed - storedCattle) <= 0)
         {
-            //Win State
+            SceneManager.LoadScene(level);
         }
 
         if(Input.GetKeyUp(KeyCode.Escape))
@@ -50,7 +53,7 @@ public class GaneEvent : MonoBehaviour
 
         if(leftHolyCattle + storedCattle < amountOfNeed)
         {
-            // Lose State
+            SceneManager.LoadScene(0);
         }
 
     }

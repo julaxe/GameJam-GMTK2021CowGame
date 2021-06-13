@@ -2568,6 +2568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howManyNeed: {fileID: 475043070}
   menu: {fileID: 284262637}
+  level: 3
   demonCattleAmount: 2
   cattleNeedAmount: 4
 --- !u!1001 &1016128968
