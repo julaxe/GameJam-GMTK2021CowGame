@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
@@ -8,9 +9,31 @@ public class Menu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject optionMenu;
     public GameObject howToPlay;
-    
-    public void PlayGame()
+
+    private float musicVolume;
+    private void Start()
     {
+        if (PlayerPrefs.HasKey("volume"))
+        {
+            musicVolume = PlayerPrefs.GetFloat("volume");
+        }
+        else
+        {
+            musicVolume = 1f;
+        }
+
+        AudioListener.volume = musicVolume;
+    }
+    private void Update()
+    {
+        
+        
+        
+        
+    }
+
+    public void PlayGame()
+    {        
        //SceneManager.LoadScene("");
     }
 
@@ -27,6 +50,14 @@ public class Menu : MonoBehaviour
     {
         mainMenu.SetActive(false);
         optionMenu.SetActive(true);
+    }
+
+    public void VolumeChange(float volume)
+    {
+        musicVolume = volume;
+        AudioListener.volume = musicVolume;
+        PlayerPrefs.SetFloat("volume", musicVolume);
+        Debug.Log(AudioListener.volume);
     }
 
     public void HowToPlay()
